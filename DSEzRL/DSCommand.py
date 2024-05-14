@@ -38,3 +38,8 @@ class SetInputsCmd(DSCommand) :
     def __init__(self, target_instance_index: int = 0, inputs : DSInputs = None) -> None:
         super().__init__(target_instance_index, "set_inputs")
         self.inputs = inputs
+
+class DoCyclesCmd(DSCommand) :
+    def __init__(self, target_instance_index: int = 0, cycles_count : int = 0) -> None:
+        super().__init__(target_instance_index, "do_cycles")
+        self.cycles_count = cycles_count
